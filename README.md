@@ -1,0 +1,2 @@
+# GAS_Library_ModalPopUp
+GASの処理中に表示するモーダルを実装したライブラリです。
