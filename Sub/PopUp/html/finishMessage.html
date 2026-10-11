@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css"/>
+    <?!= include('Sub/PopUp/css/css'); ?>
+  </head>
+  <body>
+    <div class="container">
+      <div class="message">
+        <h3>作業が完了しました。</h3>
+        <p>※GASの実行は終了しています。<br/>まだ反映されていないデータがある場合、<br/>後ほど反映されます。</p>
+      </div>
+      <div class="btns">
+        <button id='btnOK' class='action' onClick='google.script.host.close()'>閉じる</button>
+      </div>
+    </div>
+  </body>
+</html>

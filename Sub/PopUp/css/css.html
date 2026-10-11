@@ -1,0 +1,95 @@
+<style>
+  .container {
+    margin: auto;
+    text-align: center;
+    vertical-align: center;
+    font-size: 10pt;
+  }
+
+  /* エリア */
+  .box_parent {
+    display: flex;
+  }
+
+  .box {
+    margin: 0 auto;
+  }
+
+  .btns {
+    margin: 40px auto;
+  }
+
+  /* パーツ */
+  p {
+    margin: 4pt; // 若干詰める
+  }
+
+  /**
+   * HTML: <div class="loader"></div>
+   *
+   * 【参考】
+   * CSSのコピペでローディングアニメーションを簡単に実装できる「CSS Loaders」 ｜ BLACKFLAG
+   * https://black-flag.net/css/20231004-8073.html 
+   */
+  .loader {
+    width: 120px;
+    height: 22px;
+    border-radius: 20px;
+    color: #5c5a5a;
+    border: 2px solid;
+    position: relative;
+  }
+  .loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px; // 枠線
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: l6 2s infinite;
+  }
+  @keyframes l6 {
+      100% {inset:0}
+  }
+  /* Add Layout adjustment */
+  div {
+    margin: 0 auto;
+  }
+
+  /* その他 */
+  .alert {
+    color: red;
+    font-weight: bold;
+  }
+
+  .emphasis {
+    font-weight: bold;
+  }
+
+  // 送信ボタン
+  .btns button {
+    display: block;
+    margin : auto;
+    padding: auto;
+    background: #000066;
+
+    transition: .3s; /* 効いてないかも */
+    cursor    : pointer;
+
+    border    : 2px solid #000066;
+    box-shadow: 6px 6px 3px #666666;
+    border-radius: 5%;
+
+    color      : #ffffff;
+    font-size  : 16pt;
+    line-height: 1em;
+    text-align : center;
+  }
+
+  .button:hover {
+    box-shadow    : none;
+    background    : #ffffff;
+
+    color         : #000066;
+  }
+</style>
